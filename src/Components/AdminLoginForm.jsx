@@ -49,7 +49,7 @@ const AdminLoginForm = () => {
           let config = {
             method: "get",
             maxBodyLength: Infinity,
-            url: "http://localhost:8081/api/auth/verify",
+            url: "/api/auth/verify",
             headers: {
               Authorization: bearerToken,
             },

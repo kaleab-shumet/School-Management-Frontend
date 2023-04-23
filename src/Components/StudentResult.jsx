@@ -293,13 +293,6 @@ function StudentResult() {
       )}
 
       <div>
-        <Button variant="outlined" onClick={handleOnRegisterClicked}>
-          {" "}
-          {formMessage} Registration Form
-        </Button>
-
-        {/* {showCreateStudentForm && <CreateStudentForm token={bearerToken} />} */}
-
         <h3>Students Result List</h3>
 
         {/* "testOne": 12.0,
