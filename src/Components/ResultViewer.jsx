@@ -38,17 +38,44 @@ function ResultViewer(props) {
 
   console.log(JSON.stringify(result));
 
+  const styles = {
+    userContainer: {
+      backgroundColor: "#CDE5F3",
+      border: "1px solid #ccc",
+      borderRadius: "10px",
+      padding: "20px",
+      marginBottom: "20px",
+    },
+    heading: {
+      textAlign: "center",
+      fontSize: "32px",
+      color: "#008080",
+    },
+    userInfo: {
+      fontSize: "20px",
+      marginBottom: "10px",
+      color: "#333",
+    },
+  };
   return (
     <div>
-      <h3>Student Information</h3>
-      <div>
-        <p>First Name: {user.firstName}</p>
-        <p>Last Name: {user.lastName}</p>
-        <p>Email: {user.email}</p>
-        <p>Grade: {user.grade}</p>
+      <h3 style={styles.heading}>Student Information</h3>
+      <div style={styles.userContainer}>
+        <p style={styles.userInfo}>
+          <strong>First Name:</strong> {user.firstName}
+        </p>
+        <p style={styles.userInfo}>
+          <strong>Last Name:</strong> {user.lastName}
+        </p>
+        <p style={styles.userInfo}>
+          <strong>Email:</strong> {user.email}
+        </p>
+        <p style={styles.userInfo}>
+          <strong>Grade:</strong> {user.grade}
+        </p>
       </div>
 
-      <h3>Student Result</h3>
+      <h3 style={styles.heading}>Student Result</h3>
       <div>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">

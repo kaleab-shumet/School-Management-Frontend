@@ -66,7 +66,8 @@ const LoginForm = () => {
   return (
     <div>
       <div>
-        <h1>Students Result Checking System</h1>
+        <h1 style={{ margin: "auto", textAlign: "center" }}>Students Result</h1>
+        <h2>For Students Only</h2>
         <h3>
           Please Log In with your email and password to check your result !
         </h3>

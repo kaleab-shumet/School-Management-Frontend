@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "./pages/login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Results from "./pages/Results";
 import AdminLogin from "./pages/admin/AdminLogin";
@@ -7,12 +6,14 @@ import Dash from "./pages/admin/Dash";
 import ManageStudentInfo from "./pages/admin/ManageStudentInfo";
 import ManageCourses from "./pages/admin/ManageCourses";
 import ManageStudentResult from "./pages/admin/ManageStudentResult";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="/" element={<Home />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/results" element={<Results />} />

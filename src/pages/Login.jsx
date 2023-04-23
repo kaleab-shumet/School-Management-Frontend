@@ -1,15 +1,17 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Navbar from "../Components/Navbar";
 import LoginForm from "../Components/LoginForm";
+import {  useNavigate } from "react-router-dom";
+import SimpleNavbar from "../Components/SimpleNavBar";
 
 export default function Login() {
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
         <Grid item xs={12}>
-          <Navbar />
+          <SimpleNavbar />
         </Grid>
         
         <Grid item xs={12} md={3}>

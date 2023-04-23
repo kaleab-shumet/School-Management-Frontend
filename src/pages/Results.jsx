@@ -4,10 +4,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Navbar from "../Components/Navbar";
 import ProgressBar from "../Components/ProgressBar";
 import axios from "../utils/axios-instance";
 import ResultViewer from "../Components/ResultViewer";
+import SimpleNavbar from "../Components/SimpleNavBar";
 
 const Results = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +38,7 @@ const Results = () => {
       })
       .catch((error) => {
         console.log(error);
+        navigate("/login");
       });
   }, []);
 
@@ -45,7 +46,7 @@ const Results = () => {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
         <Grid item xs={12}>
-          <Navbar />
+          <SimpleNavbar isLoggedIn={true} />
         </Grid>
 
         <Grid item xs={12} md={2}></Grid>

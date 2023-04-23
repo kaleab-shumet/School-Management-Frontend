@@ -85,8 +85,8 @@ const AdminLoginForm = () => {
   return (
     <div>
       <div>
-        <h1>Admin's Dashboard</h1>
-        <h4>Students Result Checking System</h4>
+        <h1 style={{ textAlign:"center"}}>Admin's Dashboard</h1>
+        <h4>Students Result Management System</h4>
       </div>
 
       <form onSubmit={handleSubmit}>
